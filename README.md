@@ -1,3 +1,3 @@
 # My Portfolio
 https://lindazhanghf.github.io/portfolio/
-Updated May 11th, 2017
+Updated August 17th, 2017

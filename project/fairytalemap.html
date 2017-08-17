@@ -7,7 +7,7 @@
     <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ziyin Zhang &mdash; Game: Huanted</title>
+    <title>Ziyin Zhang &mdash; Project: Fairy Tale Map</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
     <meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -80,14 +80,14 @@
             </div>
         </header>
 
-        <div class="fh5co-hero" style="background-image: url(../images/game/FinalGame_1.png);" data-stellar-background-ratio="0.5">
+        <div class="fh5co-hero" style="background-image: url(../images/project/fairytalemap/hover_image.png);" data-stellar-background-ratio="0.5">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
                         <div class="fh5co-intro fh5co-table-cell">
-                            <h1 class="text-center">IMPRINT</h1>
-                            <p>Website that helps community associations hosting events</p>
+                            <h1 class="text-center">Fairy Tale Map</h1>
+                            <p>Data visualization project that maps fairytales to their country of origin</p>
                         </div>
                     </div>
                 </div>
@@ -98,51 +98,49 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
-                        <h2>IMPRINT</h2>
+                        <h2>Fairy Tale Map</h2>
                         <!-- <h3>Final Project for <i>Principles of Interaction Design</i></h3> -->
-                        <h3>Digital Civics Project for <i>Principles of Interaction Design</i></h3>
+                        <h3>Data visualization project using <i>DPLA</i></h3>
 
-                          <p> This web-app is based on Chapter 2 of the Atlanta Community Engagement Playbook - Plays for Community Associations.
+                          <p> This program was created using Processing, a Java-based programming language to program images, animation, and interactivity. www.processing.org </p>
 
-                              In this chapter, storytelling is an important method to share ideas and information in rich ways. This site helps community associations facilitate the hosting of events while nurturing a tight-knit community by allowing members to initiate projects and take the lead. This way, community associations are able to better mobilize members around a shared vision for a more progressive community. </p>
+                          <p>
+                            A data visualization project that parse the data collected via a search query to the Digital Public Library of America and visualize using a world map. The data were categorized by the animals that appeared in the fairy tales and the country that the fairy tale is from.</p>
+                          <p>
+                            I am using a nested hash table as the data structure for storing the data, I got a list of common animals from Wikipedia and saved them in a csv file. The program will generate search queries with the key word “fairy tale” and animals. The results will be grouped by locations, put into the first hash table using country name as the key, and then be grouped by species, put into the second hash table.</p>
+                          <p>
+                            After parsing the data from the search query, the program will search for images of the animals on DPLA or on a list of URLs I found online. However, I ended up searching for all the images manually as the images  found on DPLA are either unrelated to the subject or in low resolution.</p>
 
-                              <!-- <p id="playbook">Atlanta Community Engagement Playbook</p> -->
-                            <p> The City of Atlanta and its community partners are committed to engaging residents, businesses, and organizations to shape the city to be the best it can be. This playbook includes approaches to community engagement that are constructive, sustainable, collaborative, holistic, creative, and open. </p>
-                            <p> The goal is to offer community associations and service providers a set of actionable practices to achieve greater levels of quality engagement. Because neighborhood-led organizing has long been at the forefront of making change in Atlanta, from the civil rights movement through to today, this playbook is designed as a working resource—with action checklists, guides, and case studies—to support community leadership and participation in engagement processes. This resource extends to municipal agencies and service providers who have a responsibility to meet communities where they are and build sustainable partnerships through engagement. </p>
-
+                            <!-- This interactive web app is created using:
                         <ul class="fh5co-check">
-                            <li>Interactive Web App</li>
-                            <li>Node.JS</li>
+                            <li>Processing</li>
                             <li>AngularJS 4</li>
-                        </ul>
-                        <p></p>
-                        <!-- <a href="http://tinyurl.com/hauntedWindows" target="_blank" class="btn">Download game (Windows <i class="icon-windows"></i> )</a> -->
-                        <!-- <a href="http://tinyurl.com/hauntedMac" target="_blank" class="btn">Download game (Mac OS)</a> -->
-                        <a href="https://github.com/lindazhanghf/IMPRINT" target="_blank" class="btn">View source code on GitHub <i class="icon-github"></i></a>
+                        </ul> -->
 
+                        <a href="https://github.com/lindazhanghf/FairyTalesMap" target="_blank" class="btn">View source code on GitHub <i class="icon-github"></i></a>
+
+                        <!-- <a href="http://tinyurl.com/hauntedWindows" target="_blank" class="btn">Download application (Windows <i class="icon-windows"></i> )</a> -->
 
                     </div>
                     <div class="col-md-4">
-                        <p></p><b>Features</b><br />
-                        Interactive Progress bar
-                        <img src="../images/game/FinalGame_2.png" class="img-responsive">
-                        <br /> Click "Help Out" to become a volunteer
-                        <img src="../images/game/FinalGame_3.png" class="img-responsive">
-                        <br /> See bar fills up and percentage goes up
-                        <img src="../images/game/FinalGame_turnable.png" class="img-responsive">
+                        <img src="../images/project/fairytalemap/overview.png" class="img-responsive">
+                        Overview of the app
+                        <p></p>
+                        <img src="../images/project/fairytalemap/fairytale_list2.png" class="img-responsive">
+                        A list of all fairy tales found for the selected country (Germany), grouped by animal species
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="fh5co-parallax" style="background-image: url(../images/game/FinalGame_4.png);" data-stellar-background-ratio="0.5">
+        <div class="fh5co-parallax" style="background-image: url(../images/project/fairytalemap/cover.png);" data-stellar-background-ratio="0.5">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
                         <div class="fh5co-intro fh5co-table-cell">
-                            <h1 class="text-center">User Interface Design</h1>
-                            <p>Showcase of different web pages</p>
+                            <h1 class="text-center">Navigating the App</h1>
+                            <!-- <p>Explore all projects page</p> -->
                         </div>
                     </div>
                 </div>
@@ -152,39 +150,25 @@
         <div class="fh5co-section">
             <div class="container">
                 <div class="row">
-                    <!-- <div class="col-md-5 col-md-push-7">
-                        <h2>Game AI Design</h2>
-                        <h3>State Machine</h3>
-                        <p>Using state machine to controll the movement of NPC over time. The red bar on left side of the screen indicates the current "scared level" of the NPC, corresponding to the state of NPC. There are total of 5 states for the NPC:</p>
-                        <ul class="fh5co">
-                            <li><b>Idle:</b> calmly reading books at first <br/> (image at the very top)</li>
-                            <li><b>Curious:</b> inspecting objects</li>
-                            <li><b>Scared:</b> scared away from the floating objects</li>
-                            <li><b>Running:</b> running around the house</li>
-                            <li><b>Exiting:</b> exiting out of the house</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-7 col-md-pull-5"> -->
-                        <b>Homepage</b> <br/>
-                        Shows the trending projects, projects that needs volunteers and projects that needs donation.
-                        <img src="../images/game/FinalGame_curious.png" class="img-responsive">
-                        <br/><b>Explore Page</b> <br/>
-                        Explore projects using the filters
-                        <img src="../images/game/FinalGame_scared.png" class="img-responsive">
-                        <br/><b>Project Details</b> <br/>
-                        View Details of projects, click "Help Out" to participate
-                        <img src="../images/game/FinalGame_scared.png" class="img-responsive">
-                        <br/><b>Create Project</b> <br/>
-                        Step 1: Enter Details
-                        <img src="../images/game/FinalGame_running.png" class="img-responsive">
-                        <br />Step 2: Enter amount of donation needed
-                        <img src="../images/game/FinalGame_running.png" class="img-responsive">
-                        <br />Step 3: Preview Project
-                        <img src="../images/game/FinalGame_running.png" class="img-responsive">
-                        <!-- <br/><b>Create Account</b> <br/>
-                        NPC screaming and rushing out of the house (player won)
-                        <img src="../images/game/FinalGame_exiting.png" class="img-responsive"> -->
-                    <!-- </div> -->
+
+                        <p>
+                        Navigating through the program is very straightforward:
+                        </p>
+
+                        <b>Overview</b> <br/>
+                        Country colored in green indicates that at least one fairy tale was found for this country, grey indicates that no fairy tales were found.<br />
+                        Each country has a circular thumbnail showing the dominant animal species of that country.
+                        <img src="../images/project/fairytalemap/overview.png" class="img-responsive">
+                        <br/><b>View Dominant Animal of that Country</b> <br/>
+                        Hover the mouse over any thumbnail will display the full image, showing the animal with the max number of results found for that country (Russia in this case).
+                        <img src="../images/project/fairytalemap/hover_image.png" class="img-responsive">
+                        <br/><b>View List of Fairy Tales</b> <br/>
+                        Clicking on any country with green color will bring up a table containing the detailed information found for each country, grouped by animals (Germany in this case).
+                        <img src="../images/project/fairytalemap/fairytale_list.png" class="img-responsive">
+                        <br/><b>View Detail of the Fairy Tale</b> <br/>
+                        clicking on any box with a title that interests you will bring you directly to the DPLA web page of that fairy tale.
+                        <img src="../images/project/fairytalemap/dpla_page.png" class="img-responsive">
+
                 </div>
             </div>
         </div>
