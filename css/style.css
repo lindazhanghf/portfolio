@@ -650,7 +650,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   bottom: 0;
   position: absolute;
-  background: rgba(0, 0, 0, 0.4);
+  /*background: rgba(0, 0, 0, 0.4);*/
   -webkit-transition: 0.7s;
   -o-transition: 0.7s;
   transition: 0.7s;
