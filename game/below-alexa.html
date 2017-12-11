@@ -94,7 +94,7 @@
                           <p>The solution is Below, an interactive narrative game played by talking to Jesse through the radio, asking questions and giving suggestions along the way to change the story. It was an adaptation from a text-based adventure game created by Emily Nguyen, one of my classmates from Game Design class in Georgia Tech: <a href="https://belowapp.wordpress.com" target="_blank" class="btn">Original iOS game <i class="icon-share"></i><br/></a>.</p>
 
 
-                          <p>The story is about Jesse, who is facing some serious problems in a submarine, hundreds of thousands of feet below the surface of the sea. Her companion Dr. Lee was unconscious due to a mysterious plant. The player’s job is to use the radio (talking to Alexa) to communicate with Jesse, give her instructions on how to save Dr. Lee, and discover the secrets of their research along the way.</p>
+                          <p>The story is about Jesse, who is facing some serious problems in a submarine, hundreds of thousands of feet below the surface of the sea. Her companion Dr. Lee was unconscious due to a mysterious plant. The player’s job is to use the radio to communicate with Jesse (by talking to Alexa), give her instructions on how to save Dr. Lee, and discover the secrets of their research along the way.</p>
 
                             <!-- This interactive web app is created using: -->
                         <ul class="fh5co-check">
@@ -140,10 +140,10 @@
                     <b>Adapting from a text adventure game</b><br/>
                         The adaptation consist of the following process:
                     <ol>
-                        <li>Analyse the entire scripts, identify the possible intents that could be used to advance the dialogs, such as “HelloIntent”, “WhereIntent”, as well as Amazon built-in intent such as “NextIntent”.</li>
-                        <li>Rearrange the scripts, identify the dialogues that could be triggered by certain intent. For example, “This is Jesse Harper…” will be triggered by asking “who are you” at any point in the game.</li>
-                        <li>Create the custom intents according to the intent sheet, aggregate similar intents into one. For example, “AskHappen” and “AskExplain” are included in “AskSituation” intent.</li>
-                        <li>Divide the story into several parts, write the code to define the logic of each part (for detail of the logics, please refer to lambda.js in the Github repository</li>
+                        <li><b style="color:#666666">Analyse the entire scripts</b>, identify the possible intents that could be used to advance the dialogs, such as “HelloIntent”, “WhereIntent”, as well as Amazon built-in intent such as “NextIntent”.</li>
+                        <li><b style="color:#666666">Rearrange the scripts</b>, identify the dialogues that could be triggered by certain intent. For example, “This is Jesse Harper…” will be triggered by asking “who are you” at any point in the game.</li>
+                        <li><b style="color:#666666">Create the custom intents</b> according to the intent sheet, aggregate similar intents into one. For example, “AskHappen” and “AskExplain” are included in “AskSituation” intent.</li>
+                        <li><b style="color:#666666">Divide the story into several parts</b>, write the code to define the logic of each part (for detail of the logics, please refer to lambda.js in the Github repository</li>
                         <ul>
                             <li>Prologue: proceed to the next dialogue without parsing the intent</li>
                             <li>Part 1: identify the different questions asked by the player and give answers accordingly</li>
@@ -151,7 +151,7 @@
                             <li>Part 3: identify the item suggested by the player, such as antiseptic wipes or bottle for bad plants, which later is used to determine the ending of the game (Dr. Lee died or woke up)</li>
                             <li>Epilogue: proceed to the next dialogue without parsing the intent</li>
                         </ul>
-                        <li>Replace the dialogues with audio clips.</li>
+                        <li><b style="color:#666666">Replace the dialogues with audio clips</b></li>
                     </ol>
                     <br/>
 
@@ -224,7 +224,7 @@
                 Due to time constraints, I was unable to find an actor to do the voice of Jesse. The next step of development is do the recordings for Jesse and add sound effects, and add more branches to part 2 of the game.
                 <br/><br/><b>Appendix: <br/>
                 </b> Original Intent Analysis<br/>
-                <a href="https://drive.google.com/open?id=1efX6jata249cw0ttStJRbe5FJGTwfC9L" target="_blank" class="btn">Click to view Intent Analysis <i class="icon-share"></i><br/><br/><img style="max-width: 50em" src="image/MusicGlove_low-fi.png" class="img-responsive image-shadow"></a>
+                <a href="https://drive.google.com/open?id=1efX6jata249cw0ttStJRbe5FJGTwfC9L" target="_blank" class="btn">Click to view Intent Analysis <i class="icon-share"></i><br/><br/></a>
             </div>
         </div>
 
