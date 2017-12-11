@@ -91,7 +91,7 @@
 
                           <p> For inspirations, I searched and played the top-rated games on Alexa, and came accross the interactive adventure game The Magic Door. I was impressed by the voice interaction within the game, but at the same time, I felt restricted by the limited options and the robotic responses. Thus, I decided to build an interactive game without such restrictions. </p>
 
-                          <p>The solution is Below, an interactive narrative game played by talking to Jesse through the radio, asking questions and giving suggestions along the way to change the story. It was an adaptation from a text-based adventure game created by Emily Nguyen, one of my classmates from Game Design class in Georgia Tech: <a href="https://belowapp.wordpress.com" target="_blank" class="btn">Original iOS game <i class="icon-share"></i><br/></a>.</p>
+                          <p>The solution is Below, an interactive narrative game played by talking to Jesse through the radio, asking questions and giving suggestions along the way to change the story. It was an adaptation from a text-based adventure game created by Emily Nguyen, one of my classmates from Game Design class in Georgia Tech:<a href="https://belowapp.wordpress.com" target="_blank" class="btn">Original iOS game <i class="icon-share"></i></a>.</p>
 
 
                           <p>The story is about Jesse, who is facing some serious problems in a submarine, hundreds of thousands of feet below the surface of the sea. Her companion Dr. Lee was unconscious due to a mysterious plant. The player’s job is to use the radio to communicate with Jesse (by talking to Alexa), give her instructions on how to save Dr. Lee, and discover the secrets of their research along the way.</p>
@@ -130,12 +130,13 @@
                     <b>The story</b><br/>
                     The game is consist of 5 parts:
                     <ol>
-                    <li>Prologue: setting up the stage for the conversation using a radio</li>
-                    <li>Part 1: player ask various questions to understand the situation of the NPC</li>
-                    <li>Part 2: player instruct the NPC to help Dr. Lee</li>
-                    <li>Part 3: player instruct the NPC to use different medical supplies on Dr. Lee, which will determine the ending of the game</li>
-                    <li>Epilogue: the game have two endings: Dr. Lee wakes up or dies.</li>
+                    <li><b style="color:#666666">Prologue</b>: setting up the stage for the conversation using a radio</li>
+                    <li><b style="color:#666666">Part 1</b>: player ask various questions to understand the situation of the NPC</li>
+                    <li><b style="color:#666666">Part 2</b>: player instruct the NPC to help Dr. Lee</li>
+                    <li><b style="color:#666666">Part 3</b>: player instruct the NPC to use different medical supplies on Dr. Lee, which will determine the ending of the game</li>
+                    <li><b style="color:#666666">Epilogue</b>: the game have two endings: Dr. Lee wakes up or dies.</li>
                     </ol>
+                    <br/>
 
                     <b>Adapting from a text adventure game</b><br/>
                         The adaptation consist of the following process:
@@ -164,38 +165,38 @@
                     6 built-in Intents, 13 custom intents, 3 slots and 14 different slot values was defined in the game:<br/>
                     Amazon built-in intents
                     <ul>
-                        <li>AMAZON.HelpIntent: prompt the player with hints to advance the conversation.</li>
+                        <li><b style="color:#666666">AMAZON.HelpIntent</b>: prompt the player with hints to advance the conversation.</li>
                         <ul><li>“You can ask questions like  'Try the antiseptic' or 'Use the other bottles'”</li></ul>
-                        <li>AMAZON.IgnoreAction: reprompt the player with a question</li>
+                        <li><b style="color:#666666">AMAZON.IgnoreAction</b>: reprompt the player with a question</li>
                         <ul><li>“Should I try the one for bad plant, or the one with plant image?”</li></ul>
-                        <li>AMAZON.NextIntent: instruct Jesse to continue the action, or in some cases simply advance the dialogue</li>
+                        <li><b style="color:#666666">AMAZON.NextIntent</b>: instruct Jesse to continue the action, or in some cases simply advance the dialogue</li>
                         <ul><li>Sample utterances: “Good idea”, “Go ahead”</li></ul>
-                        <li>AMAZON.RepeatIntent: repeat the dialogue, with additional questions in the end</li>
+                        <li><b style="color:#666666">AMAZON.RepeatIntent</b>: repeat the dialogue, with additional questions in the end</li>
                         <ul><li>“Sorry I wasn't very clear… (repeat dialogue) “</li></ul>
-                        <li>AMAZON.StartOverIntent: clear out the player’s progress and restart the game</li>
-                        <li>AMAZON.StopIntent: stop Jesse in performing an action</li>
+                        <li><b style="color:#666666">AMAZON.StartOverIntent</b>: clear out the player’s progress and restart the game</li>
+                        <li><b style="color:#666666">AMAZON.StopIntent</b>: stop Jesse in performing an action</li>
                     </ul>
                     <br/>
                     Custom intents </br>
                     <ul>
-                        <li>AskSituation: if the character slot is empty, respond with current situation; if the character slot is Lee, respond with her situation</li>
+                        <li><b style="color:#666666">AskSituation</b>: if the character slot is empty, respond with current situation; if the character slot is Lee, respond with her situation</li>
                         <ul><li>Slot: Character</li></ul>
-                        <li>AskWhat: if the slot value is an item, respond with a description of the item; if the slot value is sense (either look or smell), respond with the description of the smell or the look of the wound</li>
+                        <li><b style="color:#666666">AskWhat</b>: if the slot value is an item, respond with a description of the item; if the slot value is sense (either look or smell), respond with the description of the smell or the look of the wound</li>
                         <ul><li>Slot: Sense</li><li>Slot: Item</li></ul>
-                        <li>AskWhere: ask Jesse about where they are</li>
-                        <li>AskWho: respond with introduction</li>
-                        <li>Command_Item: instruct Jesse to use a specific item</li>
+                        <li><b style="color:#666666">AskWhere</b>: ask Jesse about where they are</li>
+                        <li><b style="color:#666666">AskWho</b>: respond with introduction</li>
+                        <li><b style="color:#666666">Command_Item</b>: instruct Jesse to use a specific item</li>
                         <ul><li>Slot: Item</li></ul>
-                        <li>Command_Move: instruct Jesse to move Dr. Lee a bed, or lay her down</li>
-                        <li>Command_Remove: instruct Jesse to remove Dr. Lee’s pressurized suit</li>
-                        <li>NoIntent: same as StopIntent, instruct Jesse to stop performing an action</li>
-                        <li>YesIntent: agree with Jesse, instruct her to continue a task</li>
-                        <li>Special_Breath: asking about Dr. Lee’s breath</li>
-                        <li>Special_Help: independent to the built-in HelpIntent, inform Jesse to begin helping Dr. Lee (skip the questions in part 1 of the game)</li>
+                        <li><b style="color:#666666">Command_Move</b>: instruct Jesse to move Dr. Lee a bed, or lay her down</li>
+                        <li><b style="color:#666666">Command_Remove</b>: instruct Jesse to remove Dr. Lee’s pressurized suit</li>
+                        <li><b style="color:#666666">NoIntent</b>: same as StopIntent, instruct Jesse to stop performing an action</li>
+                        <li><b style="color:#666666">YesIntent</b>: agree with Jesse, instruct her to continue a task</li>
+                        <li><b style="color:#666666">Special_Breath</b>: asking about Dr. Lee’s breath</li>
+                        <li><b style="color:#666666">Special_Help</b>: independent to the built-in HelpIntent, inform Jesse to begin helping Dr. Lee (skip the questions in part 1 of the game)</li>
                         <ul><li>Sample utterances: “How can I help”, “What can I do”</li></ul>
-                        <li>Special_Illegal: a special intent that can trigger a specific part of the story--explaining the details of Jesse’s illegal research</li>
+                        <li><b style="color:#666666">Special_Illegal</b>: a special intent that can trigger a specific part of the story--explaining the details of Jesse’s illegal research</li>
                         <ul><li>Sample utterances: “Why is it illegal”, “Are you breaking the law”</li></ul>
-                        <li>WaitIntent: instruct Jesse to wait for the medicine to take effect</li>
+                        <li><b style="color:#666666">WaitIntent</b>: instruct Jesse to wait for the medicine to take effect</li>
                         <ul><li>Sample utterances: “Wait for a second”, “Maybe it takes a minute”</li></ul>
                     </ul>
 
